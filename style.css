@@ -1,4 +1,3 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css");
 @import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
 @import url("https://fonts.googleapis.com/icon?family=Roboto");
 
@@ -23,6 +22,11 @@ strong,
 td,
 th {
   font-family: "Roboto" !important;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
 }
 
 caption {
@@ -71,7 +75,7 @@ a:hover {
   background: url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1600px-Flag_of_Germany.svg.png');
   background-size: contain;
   height: 16px;
-  width: 32px;
+  width: 10px;
   border-radius: 3px;
   float: right;
 }
@@ -81,7 +85,7 @@ a:hover {
   background: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1600px-Flag_of_the_United_Kingdom.svg.png');
   background-size: contain;
   height: 16px;
-  width: 32px;
+  width: 10px;
   border-radius: 3px;
   float: right;
 }
@@ -214,50 +218,7 @@ a:hover {
   content: " -";
 }
 
-.img.img_arrowSubmit {
-  cursor: pointer;
-  border: none;
-  background: #53A351;
-  border-radius: 3px;
-  color: #ddd;
-  text-align: center;
-  padding: 10px 15px 25px;
-}
-
-.img.img_arrowSubmit:hover {
-  color: #fff;
-  background: #6bbb69;
-
-}
-
-.img.img_arrowSubmit:before {
-  content: "\f073";
-}
-
-.img.img_arrowLogout {
-  float: left;
-  font-size: 0;
-}
-
-.img.img_arrowLogout::after {
-  content: "\f2f5";
-  position: relative;
-  top: -2px;
-}
-
-label {
-  font-size: 14px;
-}
-
-input[type="password"],
-input[type="text"],
-select {
-  border-radius: 3px !important;
-  border: 1px solid #ddd !important;
-  font-size: 14px !important;
-  padding: 2px 5px !important;
-}
-
+/* Table */
 .tb,
 td,
 th,
@@ -368,6 +329,8 @@ tbody tr {
   padding: 10px 4px !important;
 }
 
+/* end of table */
+
 #weekTableRoomplan td,
 #weekTableRoomplan th {
   padding: 0 5px;
@@ -375,6 +338,51 @@ tbody tr {
 
 .tbcontrol {
   padding: 8px 1px 11px !important;
+}
+
+.img.img_arrowSubmit {
+  cursor: pointer;
+  border: none;
+  background: #53A351;
+  border-radius: 3px;
+  color: #ddd;
+  text-align: center;
+  padding: 10px 15px 25px;
+}
+
+.img.img_arrowSubmit:hover {
+  color: #fff;
+  background: #6bbb69;
+
+}
+
+.img.img_arrowSubmit:before {
+  content: "\f073";
+}
+
+.img.img_arrowLogout {
+  /* display: none; */
+  float: left;
+  font-size: 0;
+}
+
+.img.img_arrowLogout::after {
+  content: "\f2f5";
+  position: relative;
+  top: -2px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="password"],
+input[type="text"],
+select {
+  border-radius: 3px !important;
+  border: 1px solid #ddd !important;
+  font-size: 14px !important;
+  padding: 2px 5px !important;
 }
 
 .tbcontrol {
