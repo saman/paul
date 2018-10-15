@@ -1,0 +1,391 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css");
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url("https://fonts.googleapis.com/icon?family=Roboto");
+
+a,
+b,
+body,
+button,
+caption,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+i,
+input,
+label,
+li,
+p,
+span,
+strong,
+td,
+th {
+  font-family: "Roboto" !important;
+}
+
+caption {
+  caption-side: top;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+body {
+  background: none;
+}
+
+a {
+  color: #24367B !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.arrow,
+.img {
+  background: none;
+
+}
+
+.arrow_skipBtn a.img.skipLeft,
+.arrow_skipBtn a.img.skipRight {
+  width: auto;
+  height: auto;
+}
+
+.arrow::before,
+.img::after {
+  content: "\f0a9";
+}
+
+.img::after {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.img.img_LangGerman {
+  font-size: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1600px-Flag_of_Germany.svg.png');
+  background-size: contain;
+  height: 16px;
+  width: 32px;
+  border-radius: 3px;
+  float: right;
+}
+
+.img.img_LangEnglish {
+  font-size: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1600px-Flag_of_the_United_Kingdom.svg.png');
+  background-size: contain;
+  height: 16px;
+  width: 32px;
+  border-radius: 3px;
+  float: right;
+}
+
+.img.img_LangEnglish::after,
+.img.img_LangGerman::after {
+  content: "";
+}
+
+#pageContent {
+  background: none;
+}
+
+#pageHead {
+  background: #fff;
+}
+
+#imagePageHeadLeft {
+  display: none;
+}
+
+#pageHeadLeft a {
+  background: url('https://www.uni-paderborn.de/typo3conf/ext/upb/Resources/Public/Files/gfx/logo.png');
+  width: 195px;
+  height: 69px;
+  display: block;
+  background-size: contain;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#pageHeadBottom_3 {
+  background: #eee;
+  padding: 10px 10px 17px;
+  box-sizing: content-box;
+}
+
+#pageLeft {
+  /* background: #ddd; */
+}
+
+#pageTopNavi {
+  top: 160px;
+}
+
+#pageTopNavi li {
+  background: none !important;
+  border: none !important;
+}
+
+#pageHeadSwitchLang {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.linkItemContainer a.navLink.depth_1 {
+  padding: 0 10px !important;
+  background-image: none !important;
+  color: #333 !important;
+
+}
+
+.linkItemContainer a.navLink.depth_1:visited {
+  color: #333 !important;
+}
+
+.arrow::before,
+.img::after,
+.linkItemContainer a.navLink.depth_1::before,
+.rw-mailtype::after {
+  margin-right: 5px;
+  top: 2px;
+  font-family: "Font Awesome 5 Free" !important;
+  font-weight: 900 !important;
+  font-size: 20px;
+  position: relative;
+
+}
+
+.linkItemContainer a.home::before {
+  content: "\f015";
+}
+
+.linkItemContainer a.folder::before {
+  content: "\f19d";
+}
+
+.linkItemContainer a.schedule::before {
+  content: "\f073";
+}
+
+.linkItemContainer a.events::before {
+  content: "\f022";
+}
+
+.linkItemContainer a.info::before {
+  content: "\f15c";
+}
+
+.linkItemContainer a.exams::before {
+  content: "\f059";
+}
+
+.linkItemContainer a.appliance::before {
+  content: "\f0b1";
+}
+
+#loginData {
+  left: 20px;
+  top: 114px;
+}
+
+#loginData b {
+  display: none;
+}
+
+.loginDataName {
+  font-weight: bold;
+}
+
+.loginDataDate,
+.loginDataTime {
+  font-weight: bold;
+  font-size: 11px !important;
+  color: #444;
+}
+
+.loginDataDate::after {
+  content: " -";
+}
+
+.img.img_arrowSubmit {
+  cursor: pointer;
+  border: none;
+  background: #53A351;
+  border-radius: 3px;
+  color: #ddd;
+  text-align: center;
+  padding: 10px 15px 25px;
+}
+
+.img.img_arrowSubmit:hover {
+  color: #fff;
+  background: #6bbb69;
+
+}
+
+.img.img_arrowSubmit:before {
+  content: "\f073";
+}
+
+.img.img_arrowLogout {
+  float: left;
+  font-size: 0;
+}
+
+.img.img_arrowLogout::after {
+  content: "\f2f5";
+  position: relative;
+  top: -2px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input[type="password"],
+input[type="text"],
+select {
+  border-radius: 3px !important;
+  border: 1px solid #ddd !important;
+  font-size: 14px !important;
+  padding: 2px 5px !important;
+}
+
+.tb,
+td,
+th,
+tr {
+  border: none !important;
+}
+
+table {
+  border: none;
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+table * {
+  position: relative;
+}
+
+table td,
+table th {
+  padding-left: 8px;
+}
+
+table thead tr {
+  background: #36304a;
+}
+
+table tbody tr:last-child {
+  border: 0;
+}
+
+table td,
+table th {
+  text-align: left;
+}
+
+table td.l,
+table th.l {
+  text-align: right;
+}
+
+table td.c,
+table th.c {
+  text-align: center;
+}
+
+table td.r,
+table th.r {
+  text-align: center;
+}
+
+.tb,
+table {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-bottom: 50px !important;
+}
+
+.tb table {
+  box-shadow: none;
+}
+
+.tbhead {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #bbb;
+  color: #333;
+}
+
+th {
+  background: #ddd !important;
+}
+
+.tbcontrol,
+.tbsubhead {
+  border: none !important;
+}
+
+.tbsubhead {
+  background: #bbb !important;
+  color: #444 !important;
+}
+
+.table100-head th {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  font-weight: unset;
+}
+
+.tbdata td,
+.tbdata th {
+  padding: 10px 4px !important;
+}
+
+#weekTableRoomplan td,
+#weekTableRoomplan th {
+  padding: 0 5px;
+}
+
+.tbcontrol {
+  padding: 8px 1px 11px !important;
+}
+
+.tbcontrol {
+  padding: 10px 1px 12px !important;
+}
+
+.rw-mailtype img {
+  display: none;
+}
+
+.rw-mailtype::after {
+  content: "\f0e0";
+  margin-left: 5px;
+}
